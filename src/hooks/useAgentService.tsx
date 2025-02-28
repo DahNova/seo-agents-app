@@ -16,7 +16,7 @@ export const AgentServiceProvider: React.FC<{ children: React.ReactNode }> = ({ 
 
   useEffect(() => {
     // Set the Gemini API key that was provided
-    const defaultApiKey = import.meta.env.VITE_GEMINI_API_KEY || 'AIzaSyAo5Cm_T-PJf3iGDm9mpxfdBjmsE49F4Ow';
+    const defaultApiKey = import.meta.env.VITE_GEMINI_API_KEY
     
     if (defaultApiKey) {
       setApiKey(defaultApiKey);
